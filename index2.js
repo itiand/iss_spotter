@@ -22,4 +22,7 @@ nextISSTimesForMyLocation()
       const duration = pass.duration;
       console.log(`Next pass at ${datetime} for ${duration} seconds!`);
     }
-  });
+  })
+  .catch((error) => {
+    console.log("It didn't work: ", error.message);
+  })
